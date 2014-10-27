@@ -1,0 +1,35 @@
+{
+  "name": "pernr",
+  "version": "0.0.1",
+  "description": "Validation functions for Swedish national identification numbers",
+  "main": "lib/pernr.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^1.9.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arokor/pernr.git"
+  },
+  "keywords": [
+    "personnummer",
+    "swedish",
+    "national",
+    "identification",
+    "number"
+  ],
+  "author": "Aron Kornhall <aron@kornhall.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arokor/pernr/issues"
+  },
+  "homepage": "https://github.com/arokor/pernr"
+}

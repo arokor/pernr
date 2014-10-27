@@ -1,0 +1,30 @@
+{
+  "name": "pernr",
+  "main": "lib/pernr.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/arokor/pernr",
+  "authors": [
+    "Aron Kornhall <aron@kornhall.se>"
+  ],
+  "description": "Validation functions for Swedish national identification numbers",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "personnummer",
+    "swedish",
+    "national",
+    "identification",
+    "number"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
