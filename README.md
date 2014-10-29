@@ -41,6 +41,8 @@ __Arguments__
               formats are:
                   yymmdd-xxxx
                 yyyymmdd-xxxx
+                  yymmddxxxx
+                yyyymmddxxxx
                   yymmdd+xxxx (plus sign indcates that the person is older than 100 years)
 
 ---------
