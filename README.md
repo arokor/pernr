@@ -1,9 +1,9 @@
-#Pernr
+# Pernr
 
 Pernr is a minimal library for parsing and validating Swedish national
 identification numbers (personnummer, samordningsnummer).
 
-##Usage
+## Usage
     var pernr = new Pernr('890101-4251');
 
     var date = pernr.getBirthDate(); // date object for January 1 1989
@@ -16,7 +16,7 @@ identification numbers (personnummer, samordningsnummer).
 Follow [@AronKornhall](http://twitter.com/AronKornhall) for news and updates
 regarding this library.
 
-##Install
+## Install
 Node
 
     npm install pernr
@@ -26,12 +26,12 @@ Browser
     bower install pernr
     or download pernr.js
 
-##Test
+## Test
     npm test
 
-##Reference
+## Reference
 
-###Pernr(pernrStr)
+### Pernr(pernrStr)
 
 Constructor to create a new Pernr instance for the string `pernrStr`
 
@@ -47,37 +47,37 @@ __Arguments__
 
 ---------
 
-###Pernr##getBirthDate()
+### Pernr##getBirthDate()
 
 returns a date object for the persons birth date.
 
 ---------
 
-###Pernr##getGender()
+### Pernr##getGender()
 
 returns the persons gender. Possible values are Pernr.MALE and Pernr.FEMALE
 
 ---------
 
-###Pernr##getRegion()
+### Pernr##getRegion()
 
 returns the region where the person was born. This infomation is only available for
 identification numbers older than Jan 1 1990.
 
 ---------
 
-###Pernr##isValid()
+### Pernr##isValid()
 
 returns true if this is a valid identification number (the last digit is a checksum)
 
 ---------
 
-###Pernr##toString(opts)
+### Pernr##toString(opts)
 
 returns a string represenation of the pernr. if opts.fullYear is true the extended
 representation is used
 
-##License 
+## License 
 
 (The MIT License)
 
