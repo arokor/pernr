@@ -1,7 +1,7 @@
 #Pernr
 
 Pernr is a minimal library for parsing and validating Swedish national
-identification numbers (personnummer).
+identification numbers (personnummer, samordningsnummer).
 
 ##Usage
     var pernr = new Pernr('890101-4251');
@@ -43,7 +43,7 @@ __Arguments__
                 yyyymmdd-xxxx
                   yymmddxxxx
                 yyyymmddxxxx
-                  yymmdd+xxxx (plus sign indcates that the person is older than 100 years)
+                  yymmdd+xxxx (plus sign indicates that the person is older than 100 years)
 
 ---------
 

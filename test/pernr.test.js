@@ -44,6 +44,11 @@ describe('Pernr', function(){
         var birthDate = pernr.getBirthDate();
         expect(birthDate.getFullYear()).to.equal(2001);
       });
+      it('should parse birth dates in coordniation number format', function(){
+        var pernr = new Pernr('20010161-4095');
+        var birthDate = pernr.getBirthDate();
+        expect(birthDate.getDate()).to.equal(1);
+      });
     });
     describe('Region', function(){
       it('should parse regions correctly', function(){
@@ -86,6 +91,14 @@ describe('Pernr', function(){
         expect((new Pernr('800101-8920')).getGender()).to.equal(Pernr.FEMALE);
       });
     });
+    describe('Coordniation number', function(){
+      it('should return true if number is a coordination number', function(){
+        expect((new Pernr('800161-8930')).isCoordinationNumber()).to.equal(true);
+      });
+      it('should return false if number is not a coordination number', function(){
+        expect((new Pernr('800101-8920')).isCoordinationNumber()).to.equal(false);
+      });
+    });
   });
   describe('Validation', function(){
     it('should classify invalid pernrs as invalid', function(){
@@ -98,10 +111,19 @@ describe('Pernr', function(){
       expect((new Pernr('010101-4405')).isValid()).to.equal(true);
       expect((new Pernr('010101-4421')).isValid()).to.equal(true);
     });
+
+    it('should classify valid coordniation numbers as valid', function(){
+      expect((new Pernr('010161-4389')).isValid()).to.equal(true);
+      expect((new Pernr('010161-4405')).isValid()).to.equal(true);
+      expect((new Pernr('010161-4421')).isValid()).to.equal(true);
+    });
   });
   describe('Stringification', function(){
     it('should stringify pernr to compact format per default', function(){
       expect((new Pernr('010101-0101')).toString()).to.equal('010101-0101');
+    });
+    it('should stringify pernr to compact format per default with coordniation number', function(){
+      expect((new Pernr('010161-0101')).toString()).to.equal('010161-0101');
     });
     it('should stringify pernrs older than 100 years with (+) as delimiter', function(){
       expect((new Pernr('19100101-0101')).toString()).to.equal('100101+0101');
