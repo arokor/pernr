@@ -1,6 +1,6 @@
 {
   "name": "pernr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Validation functions for Swedish national identification numbers",
   "main": "lib/pernr.js",
   "directories": {
