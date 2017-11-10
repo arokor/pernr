@@ -77,6 +77,12 @@ returns true if this is a valid identification number (the last digit is a check
 returns a string represenation of the pernr. if opts.fullYear is true the extended
 representation is used
 
+## Note on "reservnummer"
+
+"Reservnummer" is used in some special cases. There are only recommendations how it should be formatted, no formalized standard.
+
+You can read more about it on [wikipedia](https://sv.wikipedia.org/wiki/Reservnummer#Format).
+
 ## License 
 
 (The MIT License)
