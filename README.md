@@ -4,14 +4,15 @@ Pernr is a minimal library for parsing and validating Swedish national
 identification numbers (personnummer, samordningsnummer).
 
 ## Usage
-    var pernr = new Pernr('890101-4251');
-
-    var date = pernr.getBirthDate(); // date object for January 1 1989
-    var gender = pernr.getGender(); // male
-    var region = pernr.getRegion(); // Malmöhus Län
-    var isValid = pernr.isValid(); // true
-    var str = pernr.toString(); // 890101-4251
-    var str2 = pernr.toString({fullYear:true}); // 19890101-4251
+```js
+var pernr = new Pernr('890101-4251'); // omit string to return a random pernr
+var date = pernr.getBirthDate(); // date object for January 1 1989
+var gender = pernr.getGender(); // male
+var region = pernr.getRegion(); // Malmöhus Län
+var isValid = pernr.isValid(); // true
+var str = pernr.toString(); // 890101-4251
+var str2 = pernr.toString({fullYear:true}); // 19890101-4251
+```
 
 Follow [@AronKornhall](http://twitter.com/AronKornhall) for news and updates
 regarding this library.
@@ -33,10 +34,10 @@ Browser
 
 ### Pernr(pernrStr)
 
-Constructor to create a new Pernr instance for the string `pernrStr`
+Constructor to create a new Pernr instance for the string `pernrStr`. Omit string to return a random pernr.
 
 __Arguments__
- 
+
     pernrStr  {String} a string representation of the identification number. Allowed
               formats are:
                   yymmdd-xxxx
@@ -83,7 +84,7 @@ representation is used
 
 You can read more about it on [wikipedia](https://sv.wikipedia.org/wiki/Reservnummer#Format).
 
-## License 
+## License
 
 (The MIT License)
 

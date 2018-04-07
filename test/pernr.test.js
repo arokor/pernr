@@ -133,4 +133,11 @@ describe('Pernr', function(){
              .toString({fullYear: true})).to.equal('20010101-0101');
     });
   });
+	describe('Randomization', function(){
+		it('should produce a valid pernr', function(){
+			expect((new Pernr()).isValid()).to.equal(true);
+			expect((new Pernr()).isValid()).to.equal(true);
+			expect((new Pernr()).isValid()).to.equal(true);
+		});
+	});
 });
